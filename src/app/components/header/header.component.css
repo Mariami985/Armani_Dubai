@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.container .header-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header-wraper .title-h1 {
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.container .header-wraper .title-p {
+  font-size: 16px;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+
+.container .header-wraper .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+}
+
+.container .header-wraper .nav-ul .nav-li {
+  margin-left: 20px;
+  font-size: 25px;
+  color: black;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.container .header-wraper .nav-ul .nav-li .active {
+  color: red;
+}
+
+.container .header-wraper .link {
+  border: 3px solid black;
+  background-color: black;
+  font-size: 25px;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=header.component.css.map */

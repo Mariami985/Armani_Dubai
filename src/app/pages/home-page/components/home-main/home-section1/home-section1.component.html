@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="left-box" *ngFor="let item of item">
+        <h3 class="left-h3">{{item.title}}</h3>
+        <p class="left-p">{{item.text}}</p>
+        <p class="p-left">{{item.description}}</p>
+        <a [routerLink]="['/details/', item.id]" class="btn">{{item.button}}</a>
+    </div>
+    <div class="right-box">
+        <div class="right-img">
+            <img class="img1" src="../../../../../../assets/img/highlight1-1.jpg">
+            <img class="img2" src="../../../../../../assets/img/highlight3-1.jpg">
+        </div>
+        <div class="img-right">
+            <img class="img3" src="../../../../../../assets/img/highlight2.jpg">
+            <img class="img4" src="../../../../../../assets/img/Livello-41-6.png">
+
+        </div>
+    </div>
+</div>

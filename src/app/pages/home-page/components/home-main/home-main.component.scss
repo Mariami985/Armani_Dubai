@@ -1,0 +1,20 @@
+.myVideo{
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    // content: autoplay;
+    margin-top:10px;
+    margin-bottom: 40px;
+    z-index: 999999999999999999999999999999;
+}
+.content-p{
+    font-size: 40px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom:30px;
+    font-weight: bolder;
+}

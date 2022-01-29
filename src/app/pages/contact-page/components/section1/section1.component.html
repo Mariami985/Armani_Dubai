@@ -1,0 +1,37 @@
+<div class="main-wraper">
+    <div class="left-div" *ngFor="let item of data">
+    <h4 class="class-h4">{{item.text}}</h4>
+    <h1 class="class-h1">{{item.title}}</h1>
+    <p class="class-p">{{item.text2}}</p>
+    <div class="div-ul" *ngFor="let items of items">
+        <ul>
+            <li class="div-li">
+                {{items.description}}
+            </li>
+        </ul>
+        <ul>
+            <li class="li-div">
+               +{{items.phone}}
+            </li>
+        </ul>
+    </div>
+    <h3 class="class-h3">toll free numbers</h3>
+    <div class="line"></div>
+    <div class="ul-div" *ngFor="let array of array" >
+        <ul>
+            <li class="div-li">
+                {{array.description}}
+            </li>
+        </ul>
+        <ul>
+            <li class="li-div">
+                 {{array.phone}} 
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="right-div">
+    <img class="img2" src="../../../../../assets/img/img1.jpg" alt="img2">
+    </div>
+    
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="bg-img"></div>
+    <!-- section 1 -->
+    <app-section1></app-section1>
+    <!-- section2 -->
+    <app-section2></app-section2>
+    <!-- section 3 -->
+    <app-section3></app-section3>
+    <div class="map" *ngFor="let item of item">
+        <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7220.3503103670455!2d55.274249!3d25.197315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb5cdbd2a322d9c5!2sArmani%20Hotel%20Dubai!5e0!3m2!1sen!2sus!4v1635108874160!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h1 class="map-h1">{{item.title}}</h1>
+        <p class="map-p">{{item.text}}</p>
+    </div>
+    <!-- forms -->
+    <app-reactive-forms></app-reactive-forms>
+</div>

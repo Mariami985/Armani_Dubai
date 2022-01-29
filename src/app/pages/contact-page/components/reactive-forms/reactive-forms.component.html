@@ -1,0 +1,49 @@
+<form class="form-class" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="user-last">
+        <input class="input-class" 
+            formControlName="name"
+            placeholder="First name*"
+            [class.red]="myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)"
+            [class.green]="!myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)">
+        <div class="div" *ngIf="myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)">
+            Name is required!
+        </div>
+        <input class="input-class"
+            formControlName="lastName" 
+            placeholder="Last name*"
+            [class.red]="myForm.get('lastName')?.invalid && (myForm.get('lastName')?.dirty || myForm.get('lastName')?.touched)"
+            [class.green]="!myForm.get('lastName')?.invalid && (myForm.get('lastName')?.dirty || myForm.get('lastName')?.touched)">
+        <div class="div" *ngIf="myForm.get('lastName')?.invalid && (myForm.get('lastName')?.dirty || myForm.get('lastName')?.touched)">
+            Last name is required!
+        </div>
+    </div>
+    <div class="mob-mail">
+        <input class="input-class1"
+            formControlName="tel" 
+            placeholder="Mobile Phone*"
+            [class.red]="myForm.get('tel')?.invalid && (myForm.get('tel')?.dirty || myForm.get('tel')?.touched)"
+            [class.green]="!myForm.get('tel')?.invalid && (myForm.get('tel')?.dirty || myForm.get('tel')?.touched)">
+        <div class="div" *ngIf="myForm.get('tel')?.invalid && (myForm.get('tel')?.dirty || myForm.get('tel')?.touched)">
+            Mobile phone is required!
+        </div>
+        <input class="input-class1" 
+            formControlName="email"
+            placeholder="Email*"
+            [class.red]="myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)"
+            [class.green]="!myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)">
+        <div class="div" *ngIf="myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)">
+            Email is required!
+        </div>
+    </div>
+    <input class="input-class2"
+        formControlName="message" 
+        placeholder="Tell us about enquiry (optional)"
+        [class.red]="myForm.get('message')?.invalid && (myForm.get('message')?.dirty || myForm.get('message')?.touched)"
+        [class.green]="!myForm.get('message')?.invalid && (myForm.get('message')?.dirty || myForm.get('message')?.touched)">
+    <div class="div" *ngIf="myForm.get('message')?.invalid && (myForm.get('message')?.dirty || myForm.get('message')?.touched)">
+        Please, Tell us about enquiry!
+    </div>
+    <p class="p-p">Please visit our Privacy Policy to understand how we handle your personal data.</p>
+    <button class="btn" type="submit">Submit request</button>
+
+</form>

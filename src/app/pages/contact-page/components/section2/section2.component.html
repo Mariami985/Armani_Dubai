@@ -1,0 +1,21 @@
+<div class="section2-wraper">
+    <div class="left-block" *ngFor="let item of item">
+        <h3 class="h3-class">
+            {{item.title}}
+        </h3>
+        <p class="p-class">{{item.text}}</p>
+        <p class="p-meil">{{item.email}}</p>
+        <button class="btn-meil">
+            <a href="mailto: Restaurant.Reservations@armanihotels.com">
+                Send email
+            </a>
+        </button>
+        <p class="p-meil">
+            +{{item.phone}}
+        </p>
+        <div class="right-block">
+            <img class="img4" src="../../../../../assets/img/img4.png" alt="img4">
+        </div>
+    </div>
+</div>
+

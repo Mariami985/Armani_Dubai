@@ -1,0 +1,115 @@
+.container{
+    width:100%;
+    margin:0 auto;
+    background-color: rgb(228, 228, 228);
+    .footer-box{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .left-block{
+            padding-top: 30px;
+            margin-left: 30px;
+            .fo-h1{
+                font-size: 40px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color:black;
+                margin-bottom: 10px;
+            }
+            .fo-p{
+                font-size: 20px;
+                font-weight: lighter;
+                text-transform: capitalize;
+                margin-left: 40px;
+                margin-bottom: 15px;
+            }
+            .fo-li{
+                font-size: 16px;
+                font-weight: lighter;
+                text-transform:uppercase;
+                margin-bottom: 15px;
+            }
+        }
+        .right-block{
+           display:flex;
+           justify-content: space-between;
+           align-items: center;
+           .left-ul{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top:40%;
+            margin-right:50px;
+            .left-li{
+                font-size: 16px;
+                font-weight: lighter;
+                text-transform:uppercase;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+
+           }
+        }
+    }
+    .line{
+        width:95%;
+        background-color: gray;
+        height: 3px;
+        margin-top:20px;
+        margin-left: 30px;
+    }
+    .left-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ul-fo{
+            margin-top:25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .li-fo{
+                font-size:30px;
+                margin-left: 30px;
+                .fb{
+                    color:rgb(2, 2, 63);
+                }
+                .tw{
+                    color:rgb(59, 59, 247)
+                }
+                .is{
+                    color:rgb(128, 29, 29)
+                }
+                .owl{
+                    color:rgb(143, 110, 110)
+                }
+            }
+        }
+    }
+    .right-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .foo-p{
+            margin-top:30px;
+            margin-left: 30px;
+            font-size:20px;
+            font-weight: lighter;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+        }
+        .left-ul{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right:30px;
+            .left-li{
+                font-size: 16px;
+                font-weight: lighter;
+                text-transform:uppercase;
+                margin-left: 30px;
+                cursor: pointer;
+            }
+
+           }
+    }
+}

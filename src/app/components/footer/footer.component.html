@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="footer-box">
+    <div class="left-block">
+        <div class="left-title" *ngFor="let title of title">
+            <h1 class="fo-h1">{{title.title}}</h1>
+            <h4 class="fo-p">{{title.text}}</h4>
+        </div>
+        <ul class="fo-ul" *ngFor="let item of data">
+            <li class='fo-li'>
+               {{item.hotel}}
+            </li>
+            <li class='fo-li'>
+                {{item.street}}
+            </li>
+            <li class='fo-li'>
+                {{item.city}}
+            </li>
+            <li class='fo-li'>
+                {{item.tel}}
+            </li>
+            <li class='fo-li'>
+                {{item.email}}
+            </li>
+        </ul>
+    </div>
+    <div class="right-block">
+        <ul class="left-ul" *ngFor="let item of item">
+            <li class="left-li">
+                {{item.title}} 
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="line"></div>
+    <div class="left-footer">
+        <ul class="ul-fo">
+            <li class="li-fo">
+                <i class="fab fa-facebook-f fb" ></i>
+            </li>
+        
+            <li class="li-fo">
+                <i class="fab fa-twitter tw"></i>
+            </li>
+            <li class="li-fo"> 
+                <i class="fab fa-instagram is"></i>
+            </li>
+            <li class="li-fo">
+                <i class="fab fa-earlybirds owl"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="right-footer" *ngFor="let item of title1">
+        <p class="foo-p">{{item.title}}</p>
+        <ul class="left-ul" *ngFor="let item of text">
+            <li class="left-li">
+               {{item.text}}
+            </li>
+        </ul>
+    </div>
+</div>
